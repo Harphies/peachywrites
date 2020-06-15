@@ -1,0 +1,77 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ */
+
+module.exports = {
+  /* Your site config here */
+  siteMetadata: {
+    title: `Ezz`,
+    description: `A blog to talk about what Ezz reads and learns.`,
+    // change this to you website url
+    siteUrl: `https://ezzeddin.netlify.app/`, 
+    home: {
+      title: `Hi! I'm Ezz`,
+      description: `I made this portfolio to talk about what I do and what I read.
+
+      Short bio: a practically-minded guy who is a data engineer at Affectiva and AI enthusiast and passionate about building software applications.`,
+    },
+    /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
+    w3l_dom_key: `5eac961f0afcdCF_Domain_verify` 
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/_data`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [{
+          resolve: `gatsby-remark-prismjs`,
+          options: {
+            classPrefix: "language-",
+            inlineCodeMarker: null,
+            aliases: {},
+            showLineNumbers: false,
+            noInlineHighlight: false,
+          },
+        },
+        {
+          resolve: 'gatsby-remark-emojis',
+        }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it. replace with yours
+        trackingId: "UA-155728082-2",
+        head: true,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Delog GatbsyJS Starter`,
+        short_name: `Delog`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#381696`,
+        display: `standalone`,
+        icon: "src/images/ezz-pic.png",
+      },
+    },
+    `gatsby-plugin-sass`, 
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
+    'gatsby-plugin-dark-mode',
+    // siteURL is a must for sitemap generation
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
+  ],
+}
