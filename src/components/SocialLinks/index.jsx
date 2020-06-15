@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from '@emotion/styled'
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "@emotion/styled";
 
-import Linkedin from './linkedin.svg'
+import Linkedin from "./linkedin.svg";
 
 const Wrapper = styled.div`
   display: flex;
@@ -20,18 +20,18 @@ const Link = styled.a`
   }
 `;
 
-const SocialLinks = ({size, hideMail, iconStyle}) => {
+const SocialLinks = ({ size, hideMail, iconStyle }) => {
   const style = {
     height: size,
     width: size,
     margin: size / 8,
-    ...iconStyle
+    ...iconStyle,
   };
 
   return (
     <Wrapper className="social-links">
       <Link
-        href="https://linkedin.com/in/ezzeddinabdullah"
+        href="https://www.linkedin.com/in/iqmat-omotayo-b5549619b/"
         title="Linkedin"
         style={style}
         className="linkedin"
@@ -39,26 +39,19 @@ const SocialLinks = ({size, hideMail, iconStyle}) => {
         <Linkedin />
       </Link>
     </Wrapper>
-  )
-}
+  );
+};
 
 SocialLinks.propTypes = {
   size: PropTypes.number.isRequired,
   hideMail: PropTypes.bool,
   iconStyle: PropTypes.object,
-}
-
+};
 
 SocialLinks.defaultProps = {
-  hideMail: false
-}
+  hideMail: false,
+};
 
-export {
-  Facebook,
-  Instagram,
-  Email,
-  Youtube,
-  Website
-}
+export { Facebook, Instagram, Email, Youtube, Website };
 
 export default SocialLinks;
