@@ -7,18 +7,18 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Ezz`,
-    description: `A blog to talk about what Ezz reads and learns.`,
+    title: `Peachy`,
+    description: `A blog post on my creative writtings and poems.`,
     // change this to you website url
-    siteUrl: `https://ezzeddin.netlify.app/`, 
+    siteUrl: `http://www.peachywrites.com/`,
     home: {
-      title: `Hi! I'm Ezz`,
-      description: `I made this portfolio to talk about what I do and what I read.
+      title: `Hi! I'm Peachy`,
+      description: `I made this blog to talk about my writings and other creative stuffs that I do.
 
-      Short bio: a practically-minded guy who is a data engineer at Affectiva and AI enthusiast and passionate about building software applications.`,
+      Short bio: A passionate and creative enterpreneur, at my pleasure times, I write creative peom contents to engage peopple's mind.`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
-    w3l_dom_key: `5eac961f0afcdCF_Domain_verify` 
+    w3l_dom_key: `5eac961f0afcdCF_Domain_verify`,
   },
   plugins: [
     {
@@ -31,19 +31,21 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
-          resolve: `gatsby-remark-prismjs`,
-          options: {
-            classPrefix: "language-",
-            inlineCodeMarker: null,
-            aliases: {},
-            showLineNumbers: false,
-            noInlineHighlight: false,
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: false,
+              noInlineHighlight: false,
+            },
           },
-        },
-        {
-          resolve: 'gatsby-remark-emojis',
-        }],
+          {
+            resolve: "gatsby-remark-emojis",
+          },
+        ],
       },
     },
     {
@@ -52,7 +54,7 @@ module.exports = {
         // The property ID; the tracking code won't be generated without it. replace with yours
         trackingId: "UA-155728082-2",
         head: true,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -66,12 +68,12 @@ module.exports = {
         icon: "src/images/ezz-pic.png",
       },
     },
-    `gatsby-plugin-sass`, 
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
-    'gatsby-plugin-dark-mode',
+    "gatsby-plugin-dark-mode",
     // siteURL is a must for sitemap generation
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
   ],
-}
+};
