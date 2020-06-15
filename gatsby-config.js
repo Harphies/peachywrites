@@ -65,7 +65,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#381696`,
         display: `standalone`,
-        icon: "src/images/ezz-pic.png",
+        icon: "src/images/iqmat2.jpeg",
       },
     },
     `gatsby-plugin-sass`,
