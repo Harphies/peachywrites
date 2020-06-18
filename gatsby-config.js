@@ -13,9 +13,9 @@ module.exports = {
     siteUrl: `http://www.peachywrites.com/`,
     home: {
       title: `Hi! I'm Peachy`,
-      description: `I made this blog to talk about my writings and other creative stuffs that I do.
+      description: `I created this blog to talk about my writings and other creative stuffs that I do.
 
-      Short bio: A passionate and creative poet and an fashion enterpreneur, at my pleasure times, I write creative peom contents to engage peopple's mind.`,
+      Short bio: A passionate and creative poet, a fashion enterpreneur. At my leisure and pleasurable times, I write creative peoms and contents to engage peopple's mind.`,
     },
     /* W3Layouts domain verification key for contact forms https://my.w3layouts.com/Forms/ */
     w3l_dom_key: `5eac961f0afcdCF_Domain_verify`,
