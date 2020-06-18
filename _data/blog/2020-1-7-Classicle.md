@@ -3,8 +3,8 @@ template: BlogPost
 path: /spasm
 date: 2020-06-15T00:00:00.000Z
 title: Spasm
-thumbnail: /assets/sea.jpeg
-metaDescription: The sea pebble poem
+thumbnail: /assets/Adobe_Post_20200618_1212430.9642985154222713.png
+metaDescription: ''
 ---
 <!--\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
